@@ -1,0 +1,227 @@
+.section-committees {
+  padding: 4rem 6rem;
+  margin-top: 6rem;
+}
+
+.brochure {
+  font-size: $default-font-size;
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  background-color: $color-primary-dark;
+  &:link {
+    background-color: $color-primary-dark;
+    color: white;
+  }
+  &:hover {
+    background-color: $color-primary-dark;
+    color: white;
+    text-decoration: none;
+  }
+  &:visited {
+    background-color: $color-primary-dark;
+    color: white;
+    text-decoration: none;
+  }
+  &:active {
+    background-color: $color-primary-dark;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.content--committees {
+  text-align: center;
+  padding: 0 4rem;
+
+  @include respond(phone) {
+    text-align: justify;
+    padding: 0;
+  }
+}
+
+blockquote {
+  font-size: 3rem;
+  @include respond(phone) {
+    text-align: center;
+    font-size: $default-font-size;
+    padding: 0;
+  }
+}
+.citey {
+  display: block;
+  text-align: right;
+  font-family: Verdana, Arial, sans-serif;
+  margin-top: 1rem;
+  font-size: $default-font-size;
+  color: #aaa;
+  font-style: normal;
+  @include respond(phone) {
+    text-align: center;
+    font-size: $default-font-size;
+    padding: 0;
+  }
+}
+blockquote q {
+  font-family: Georgia, serif;
+  font-style: italic;
+  letter-spacing: 0.1rem;
+}
+blockquote q span {
+  will-change: opacity, filter;
+  opacity: 0;
+  filter: blur(0px);
+}
+q {
+  quotes: "“" "”" "‘" "’";
+}
+q:before {
+  content: open-quote;
+  margin-right: 0.8rem;
+}
+q:after {
+  content: close-quote;
+}
+q:before,
+q:after {
+  color: #ccc;
+  font-size: 4rem;
+}
+.lessBold {
+  font-weight: 700;
+  font-size: 3rem;
+  @include respond(phone) {
+    text-align: center;
+    font-size: $default-font-size;
+    padding: 0;
+  }
+}
+
+.class--committees {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  //   width: 100%;
+  //   padding: 0 4rem;
+  @include respond(phone) {
+    padding: 0;
+  }
+}
+
+.committee-box {
+  margin-bottom: 3rem;
+  padding: 0 1rem;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  //   width: 100%;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  &-header {
+    padding: 1rem;
+    display: flex;
+    height: 15rem;
+
+    @include respond(tab-port) {
+      width: inherit;
+    }
+
+    @include respond(phone) {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    img {
+      border-radius: 3rem;
+
+      object-fit: contain;
+
+      @include respond(phone) {
+        object-fit: fill;
+        border-radius: 3rem;
+      }
+    }
+  }
+  &-body {
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 2rem;
+    // margin-top: 2rem;
+    // min-height: 250px;
+
+    h5 {
+      margin: 2rem 0;
+      color: $color-black;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    p {
+      font-size: $default-font-size;
+    }
+    @include respond(phone) {
+      margin-top: -3rem;
+      text-align: justify;
+    }
+  }
+  @include respond(phone) {
+    padding: 0;
+  }
+}
+
+.committeeuser {
+  display: flex;
+  align-self: center;
+  margin-top: auto;
+  @include respond(phone) {
+    margin-top: 1rem;
+  }
+}
+
+.committeeuser img {
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 0.2rem;
+}
+.committeeuser-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h5 {
+    margin: 0;
+    color: $color-black;
+    font-size: 2rem;
+    font-weight: 800;
+  }
+}
+
+.committeeuser-info small {
+  color: #545d7a;
+}
+
+.non_visible_text {
+  display: none;
+}
+
+.non_visible_text_1 {
+  display: none;
+}
+
+.non_visible_text_2 {
+  display: none;
+}
+
+.non_visible_text_3 {
+  display: none;
+}
+
+.non_visible_text_4 {
+  display: none;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RuiaMUN | UNHRC</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+        // add padding top to show content behind navbar
+        navbar_height =
+          document.querySelector(".navbar.fixed-top").offsetHeight;
+        document.body.style.paddingTop = navbar_height + "px";
+      });
+      // DOMContentLoaded  end
+    </script>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-color-nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img id="logo" src="img/main_logo_white.png" />
+          &nbsp;&nbsp;&nbsp;RuiaMUN</a
+        >
+        <!-- <span class="v-line"></span> -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main_nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main_nav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ruia Republic</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Organising Team</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                Our Committees
+              </a>
+              <ul class="dropdown-menu dropdown-menu-right">
+                <li><a class="dropdown-item" href="#">UNHRC</a></li>
+                <li><a class="dropdown-item" href="#"> UNSC </a></li>
+                <li><a class="dropdown-item" href="#"> UN Women </a></li>
+                <li><a class="dropdown-item" href="#"> Lok Sabha </a></li>
+                <li>
+                  <a class="dropdown-item" href="#"> International Press </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">RuiaMUN</a>
+            </li>
+          </ul>
+        </div>
+        <!-- navbar-collapse.// -->
+      </div>
+      <!-- container-fluid.// -->
+    </nav>
+  </body>
+</html>
